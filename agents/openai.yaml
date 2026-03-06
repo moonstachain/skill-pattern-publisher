@@ -1,0 +1,6 @@
+interface:
+  display_name: Skill Pattern Publisher
+  short_description: Materialize local skills from Skill Patterns and publish them
+    to GitHub.
+  default_prompt: Use $skill-pattern-publisher to turn a confirmed strategy into a
+    local skill and publish selected skills when requested.

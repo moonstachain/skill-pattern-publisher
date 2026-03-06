@@ -1,0 +1,15 @@
+skill_name: sample-strategy-skill
+goal: Convert a confirmed strategy into a reusable Codex skill.
+trigger_description: Use when a user wants to formalize a repeated workflow as a local skill.
+entry_commands:
+  - python3 scripts/sample_strategy_skill.py run
+constraints:
+  - Keep the skill deterministic and self-contained.
+  - Do not store tokens, cookies, or login state in the repository.
+expected_outputs:
+  - A generated skill directory with SKILL.md, agents/openai.yaml, scripts/, and .gitignore.
+  - A skills-registry.json entry marked READY_LOCAL until explicitly published.
+required_files:
+  - references/notes.md
+repo_visibility: public
+publish_status: READY_LOCAL
